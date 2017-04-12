@@ -1,0 +1,330 @@
+@CHARSET "ISO-8859-1";
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+html{
+	height: 100%;
+}
+
+.spaceontop{
+	margin-top: 30px;
+}
+
+body{
+	background: #f7f7f7;
+	position: relative;
+	min-height: 100%;
+}
+
+header {
+	background: #000128;
+	width: 100%
+}
+
+#navigation {
+	background: #000128;
+}
+
+.navbar-default {
+	background: none;
+	border: none;
+	position: relative;
+	z-index: 999;
+	padding: 21px 0 0 0;
+}
+
+.navbar-header {
+	float: none;
+	/*text-align: center*/
+}
+
+.navbar-header button{
+	text-align: center;
+}
+
+.navbar-toggle {
+	margin-right: 0;
+	float: none;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+	height: 111px;
+	/*display: block;*/
+	float: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.navbar-default .nav-justified {
+    border-top: 1px solid #f9f8f9;
+    padding: 0 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.navbar-collapse{
+	border-color: #e7e7e7;
+}
+
+.navbar-default .nav-justified>li {
+    position: relative;
+    bottom: 1px;
+}
+
+.navbar-brand>img{
+	display: inline-block;
+}
+
+.navbar-default .nav-justified>li>a {
+    color: #fff;
+    font-size: 12px;
+    font-family: Georgia;
+    font-weight: bold;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-top: 1px solid transparent;
+    padding: 25px 0px;
+    text-transform: uppercase;
+}
+
+
+#home .home, #application .application, #requirements .requirements, #dates .dates,
+#logistics .logistics, #projects .projects, #mentors .mentors, #activities .activities,
+#applicants .applicants, .navbar-default .nav-justified>li>a:hover {
+    border-top: 1px solid #adc648;
+    color: #adc648;
+    background: none;
+}
+
+a {
+	-webkit-transition: all ease .2s;
+	-moz-transition: all ease .2s;
+	-o-transition: all ease .2s;
+	transition: all ease .2s;
+	color: #adc648;
+}
+
+a:hover {
+	color: #adc648;
+	text-decoration: underline;
+}
+
+@media(max-width:767px) {
+.navbar-default .nav-justified>li>a {
+	padding: 10px 0;
+}
+.navbar-default .nav-justified{
+	border-top: none;
+}
+.navbar-header button{
+	background: white;
+}
+.navbar-collapse{
+	border: none;
+}
+}
+
+h1{
+	font-weight: bold;
+}
+
+h3, p{
+	font-family: Merriweather, Georgia, serif;
+}
+
+.required{
+	color: #ff0000;
+	margin-left: 5px;
+}
+
+header>img{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.nav-tabs a{
+	font-weight: bold;
+	color: #75c543;
+}
+
+.nav-tabs{
+	margin-bottom: 10px;
+}
+
+p{
+	text-align: justify;
+}
+
+label{
+	font-weight: normal;
+}
+
+.other_description {
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+textarea{
+	width: 100%;
+}
+
+table.universities td{
+	width: 25%;
+}
+
+#home p, #logistics p, #dates p{
+	font-size: 18px;
+	line-height: 32px;
+	/*font-family: 'Source Sans Pro', sans-serif;*/
+}
+
+ footer{
+ 	padding: 20px;
+ 	text-align: center;
+ 	line-height: 25px;
+ 	background: #72a7cc;
+ 	color: white;
+  /*position: absolute;
+ 	bottom: -80px;*/
+ 	width: 100%;
+	overflow: hidden;
+	box-shadow: 2px 0px 4px grey;
+ }
+
+ .styleRadio:before{
+ content: "";
+ width: 13px;
+ height: 13px;
+ display: block;
+ border: 1px solid red;
+ border-radius: 50%
+}
+
+.bottom-margin, .bottom-margin{
+	margin-bottom: 20px;
+}
+
+#mentor_profiles img, #project_details img{
+	height: 280px;
+}
+
+#mentor_profiles, #project_details{
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.fix_on_top{
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+.navigation_margin{
+	padding-top: 90px;
+}
+
+#saved_transcripts{
+    text-decoration: underline;
+    color: blue;
+    font-weight: bold;
+}
+
+@media  print{
+	#project_details img, footer, header{
+		display: none;
+	}
+	#application header, footer{
+		display: none;
+	}
+	#application .tab-content .tab-pane{
+		display: block;
+		opacity: 1;
+	}
+	#application input[type="button"], input[type="submit"]{
+		display: none;
+	}
+}
+.dropdown-menu>li>a:hover {
+    font-weight: bold;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: rgba(238, 238, 238, 0);
+}
+
+#nsf_logo{
+	width: 130px;
+}
+
+#epscor_logos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-right: 1px solid rgba(255,255,255,.15);
+}
+
+#epscor_logos img{
+	max-height: 150px;	
+}
+
+#menu_1, #menu_2{
+	text-align: left; 
+	line-height: 40px;
+	display: flex; 
+	justify-content: center;
+	border-right: 1px solid rgba(255,255,255,.15);
+	font-weight: bold;
+	min-height: 446px;
+}
+
+#menu_1 li, #menu_2 li{
+	list-style: none;
+	cursor: pointer;
+}
+
+#menu_1 li a, #menu_2 li a{
+	color: white;
+}
+
+#menu_2{
+	display: block;
+	text-align: center;
+}
+
+#menu_2 ul{
+	padding-left: 0px;
+}
+
+ul.social {list-style:none;}
+ul.social li {display:inline; padding: 0; margin:0 5px;}
+ul.social li a {display:inline-block; margi:0 auto; -moz-border-radius:50%; -webkit-border-radius:50%; border-radius:50%; text-align:center; width: 50px; height: 50px; font-size:20px; position:relative; background-color: #D3D3D3;}
+ul.social li a i {color:#FFF; text-align: center; margin:0; line-height:40px; -webkit-transition: all 0.8s; -moz-transition: all 0.8s; -o-transition: all 0.8s; -ms-transition: all 0.8s; transition: all 0.8s;}
+ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rotate(360deg); -ms--transform: rotate(360deg);	transform: rotate(360deg);
+                         -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; -ms-transition: all 0.2s; transition: all 0.2s;}
+
+.social li a.rss:hover {background-color: #F56505;}
+.social li a.face:hover {background-color:#3B5998;}
+.social li a.twit:hover {background-color:#33ccff;}
+.social li a.google:hover {background-color:#BD3518;}
+.social li a.linkedin:hover {background-color:#007bb7;}
+
+#social_networking_icons li{
+	display: block;
+	line-height: 60px;
+}
+
+/* Removing vertical lines for smaller screens */
+@media (max-width: 767px) {
+	#epscor_logos, #menu_1, #menu_2{
+		border: none;
+		min-height: 0px;
+	}
+	#social_networking_icons li{
+		display: inline-block;
+	}
+} 
