@@ -4,8 +4,8 @@ session_start();
 if(isset($_POST['login']))
 {
 	// Hardcoding user name and password for now
-	$username = "admin";
-	$password = "password";
+	$username = "xxxxxxxx";
+	$password = "xxxxxxxx";
 	//var_dump($_POST);
 	if($_POST['username'] == $username && $_POST['password'] == $password)
 	{
